@@ -21,6 +21,7 @@ export default {
         // eslint(),
         typescript({
             typescript: require('typescript'),
+            tsconfig: './tsconfig.base.json',
         }),
         commonjs(),
         nodeResolve(),

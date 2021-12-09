@@ -57,6 +57,7 @@ class SignaturePad extends React.PureComponent<Props, State> {
      * @return {void}
      */
     componentDidMount(): void {
+        console.log("PROTASIE")
         const canvas = this.canvasRef.current;
 
         if (canvas) {
@@ -71,6 +72,10 @@ class SignaturePad extends React.PureComponent<Props, State> {
             }
 
             this.signaturePad = new SigPad(canvas, this.props.options);
+            
+            const h = canvas.height;
+            canvas.height = 69;
+            canvas.height = h;
         }
     }
 
@@ -349,6 +354,7 @@ class SignaturePad extends React.PureComponent<Props, State> {
      * @return {void}
      */
     handleResize(): void {
+        console.log('handleResize');
         this.scaleCanvas();
     }
 

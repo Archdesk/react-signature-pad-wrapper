@@ -1,7 +1,6 @@
 /.idea
 /node_modules
 /coverage
-/dist
 /example/dist
 /example/node_modules
 .DS_Store
